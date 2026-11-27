@@ -32,17 +32,17 @@ b) réseau SIREN : remplacement des fonctions d'activations du réseau (ReLU) pa
 
 
 ## Plan de travail : 
-1. a) Paul :  étudier les explications théoriques du "spectral bias", les raisons pourquoi le "fourier feature encoding" et "SIREN" atténuent le spectral bias
+1. a) Paul :  étudier les explications théoriques du "spectral bias", les raisons pourquoi le "fourier feature encoding" et "SIREN" atténuent le spectral bias \\
    b) Ana et Brice : faire un notebook dans lequel on compare les performances et les dynamiques d'apprentissage (basses fréquences puis hautes fréquences ?) de 3 réseaux pour une fonction simple 1D:
    - un MLP simple entrainé sur N1 epochs
    - ce même MLP entrainé plus longtemps sur N2 > N1 epochs
    - un MLP avec entrées encodées selon fourier feature entrainé sur N1 epochs
-   - un MLP type SIREN entrainé sur N1 epochs
+   - un MLP type SIREN entrainé sur N1 epochs \\
    Les 3 réseaux ont le mêmes nombre de poids, et une architecture presque identique.
 
 2. Réaliser une deuxième expérience, plus complexe qu'une fonction 1D, sur, à définir :
    - soit un PINN (EDP avec fonction à valeurs dans R2 pour observer la reproduction du champs de la solution)
-   - soit un NeRF (reproduction d'une scène en 3D)
+   - soit un NeRF (reproduction d'une scène en 3D) \\
   Réseau plus profond, et réalisation plus technique (construire le dataset, entrainement sur GPU, plusieurs modules .py pour le code...)
 
 3. Conclure en fonction des résultats observés, des résultats attendus selon la littérature
