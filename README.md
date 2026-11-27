@@ -11,3 +11,10 @@ low_frequencies_hddl/
     └── 📁 models/    # architectures des réseaux
         └── ...
 ```
+
+TODO
+
+- Cas simple
+- Application
+- Etoffer cette todo qui pue
+- requirements.txt
