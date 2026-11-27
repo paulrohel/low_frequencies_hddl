@@ -117,3 +117,16 @@ Après un `git pull`, Git affiche `CONFLICT` :
   *.ckpt
   ```
 - Notebooks : vider les sorties avant de committer (*Clear All Outputs*), sinon les conflits sont illisibles. Version automatique : `pip install nbstripout && nbstripout --install` dans le dépôt (à faire par chacun). Idéalement, un notebook = un propriétaire.
+
+
+
+# Création d'un environnement de travail virtuel 
+
+user:~/Documents/5A/HDDL/low_frequencies_hddl$ python -m venv .venv
+user~/Documents/5A/HDDL/low_frequencies_hddl$ source .venv/bin/activate
+
+Télécharger les librairies nécessaires dans l'environnement virtuel : 
+(.venv) user:~/Documents/5A/HDDL/low_frequencies_hddl$ pip install torch numpy scipy matplotlib
+
+Pensez ensuite à lancer pip freeze > requirements.txt pour figer ces versions pour vos collaborateurs.
+
